@@ -118,6 +118,63 @@ nav ul li.btn span.show:before{
   background-color: #ffcccc;
 }
 
+.texto-centro{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.texto-centro h1{
+  color: #FBC02D;
+  text-shadow: 3px 4px #383838;
+  font-weight: 700;
+  font-size: 6rem;
+  margin-bottom: 10px;
+  /*z-index: 1;*/
+}
+.texto-centro h2{
+  color: #fff;
+  text-shadow: 3px 4px #383838;
+  font-weight: 700;
+  font-size: 5rem;
+  margin-bottom: 10px;
+  /*z-index: 1;*/
+}
+.texto-centro h3{
+  color: #fff;
+  text-shadow: 3px 4px #383838;
+  font-weight: 700;
+  font-size: 4rem;
+  margin-bottom: 10px;
+  /*z-index: 1;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1052px) {
   nav{
     padding: 10px 20px 10px 20px;
@@ -128,15 +185,25 @@ nav ul li.btn span.show:before{
   nav ul div.items{
     /*flex: 4;*/
   }
+  .bemvindo-cover{
+    padding: 150px 0 0 0;
+    color: #FBC02D;
+    font-weight: bold;
+    font-size: 5rem; /* 5 * 16 */
+  }
+
 }
 
-@media screen and (max-width: 566px){
+@media screen and (max-width: 750px){
   nav{
     padding: 10px 20px 10px 10px;
   }
   nav ul li.btn{
     display: block;
     color: #fff;
+  }
+  nav ul li span{
+    -webkit-tap-highlight-color: transparent; /* for removing the highlight */
   }
   nav ul li.logo{
     display: none;
@@ -154,6 +221,7 @@ nav ul li.btn span.show:before{
   }
   nav ul div.items.show{
     top: 60px;
+    height: 100vh;
   }
   nav ul div.items li{
     text-align: center;
@@ -164,4 +232,21 @@ nav ul li.btn span.show:before{
     font-size: 19px;
     color: #fff;
   }
+  .bemvindo-cover{
+    padding: 150px 0 0 0;
+    color: #FBC02D;
+    font-weight: bold;
+    font-size: 3rem; /* 5 * 16 */
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+.bemvindo-cover{
+  padding: 150px 0 0 0;
+  color: #FBC02D;
+  font-weight: bold;
+  font-size: 2rem; /* 5 * 16 */
+}
+
 }

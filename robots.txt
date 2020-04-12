@@ -1,0 +1,6 @@
+User-agent: *
+
+Disallow:
+
+Sitemap: https://bambinoeventos.netlify.com/sitemap.xml
+

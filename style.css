@@ -140,7 +140,7 @@ nav ul li.btn span.show:before{
   opacity: 0.85;
 }
 
-.texto{
+.textoxx{
   width: 100%;
   background-color: #ffcccc;
 }
@@ -464,3 +464,15 @@ nav ul li.btn span.show:before{
 .p-3-mod a i:hover {
     color: #fff !important;
 }*/
+
+
+
+.fw-divider-special-center{
+  background-color: #546071;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  height: 3px;
+  width: 50%;
+  transform: translate(-50%,-50%);
+}

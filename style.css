@@ -167,7 +167,7 @@ nav ul li.btn span.show:before{
   }
   @media (orientation: landscape) and (max-width: 568px){
     .texto-centro{
-      top: 60%;
+      top: 58%;
       left: 65%;}
   }
   @media (orientation: landscape) and (min-width: 569px) and (max-width: 768px){
@@ -175,7 +175,12 @@ nav ul li.btn span.show:before{
       top: 55%;
       left: 62%;}
   }
-  @media (orientation: landscape) and (min-width: 769px) and (max-width: 950px){
+  @media (orientation: landscape) and (min-width: 769px) and (max-width: 790px){
+    .texto-centro{
+      top: 60%;
+      left: 57%;}
+  }
+  @media (orientation: landscape) and (min-width: 791px) and (max-width: 950px){
     .texto-centro{
       top: 55%;
       left: 57%;}
@@ -312,7 +317,12 @@ nav ul li.btn span.show:before{
       font-size: 1.8rem;
       margin-bottom: 10px;}
   }
-  @media (orientation: landscape) and (min-width: 769px) and (max-width: 950px){
+  @media (orientation: landscape) and (min-width: 769px) and (max-width: 790px){
+    .texto-centro h3{
+      font-size: 2.3rem;
+      margin-bottom: 10px;}
+  }
+  @media (orientation: landscape) and (min-width: 791px) and (max-width: 950px){
     .texto-centro h3{
       font-size: 2.5rem;
       margin-bottom: 10px;}

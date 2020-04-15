@@ -473,6 +473,7 @@ nav ul li.btn span.show:before{
   opacity: 0;
   pointer-events: none;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  z-index: 9999999999; /*Força o widget ficar acima de qualquer elemento*/
   transition: opacity .3s ease-in-out;
 }
 

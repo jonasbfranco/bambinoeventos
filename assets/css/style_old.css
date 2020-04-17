@@ -47,7 +47,7 @@ nav ul li.logo{
   flex: 1;
   font-size: 30px;
   font-weight: 700;
-  color: #fff;}
+  color: #f2f2f2;}
   @media (max-width: 500px){
     nav ul li.logo{
       display: none;}
@@ -58,24 +58,21 @@ nav ul li.logo{
 
 
 nav ul div.items{
-  padding: 0 0px;
+  padding: 0 10px;
   display: inline-flex;}
   @media (max-width: 500px){
     nav ul div.items{
-    z-index: 1;
+    z-index: -1;
     position: fixed;
-    top: 66px;
-    left: 0px;
-    height: 100%;
-    width: 0px;
+    top: -250px;
+    right: 0;
+    width: 100%;
     background: #8e44ad;
     display: inline-block;
-    overflow-x: hidden;
-    transition: all .4s; }
+    transition: top .4s; }
     nav ul div.items.show{
-    top: 66px;
-    width: 250px;
-    height: 100%;
+    top: 60px;
+    height: 100vh;
     opacity: 1;}
     nav ul div.items li{
     text-align: center;
@@ -91,12 +88,12 @@ nav ul div.items a{
   text-decoration: none;
   font-size: 18px;
   padding: 0 12px;
-  color: #fff;
+  color: #f2f2f2;
 
 }
 
 nav ul div.items a:hover{
-  font-weight: none;
+  color: cyan;
 }
 
 nav ul li.btn{
@@ -135,166 +132,206 @@ nav ul li.btn span.show:before{
 .img-back{
   height: 100vh;
   width: 100%;
-  background-image: url(../../public/imagens/empresa/salao.png);
+  background-image: url(../../public/imagens/empresa/makereservation_dark.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  opacity: 0.85;}
-  @media (max-width: 320px) {
-    .img-back{
-      height: 100vh;}
-  }
-  @media (min-width: 321px) and (max-width: 500px){
-    .img-back{
-      height: 100vh;}
-  }
-
-.texto-centro{
-  width: 100%;
-  height: 100%;
+  opacity: 0.85;
 }
 
-.container .texto-centro h1{
-  /*color: #FBC02D;
-  text-shadow: 3px 4px #383838;*/
+.textoxx{
+  width: 100%;
+  background-color: #ffcccc;
+}
+
+.texto-centro{
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%,-50%);}
+  @media (max-width: 320px) {
+    .texto-centro{
+      top: 45%;
+      left: 35%;}
+  }
+  @media (min-width: 321px) and (max-width: 500px){
+    .texto-centro{
+      top: 40%;
+      left: 35%;}
+  }
+  @media (min-width: 501px) and (max-width: 1000px){
+    .texto-centro{
+      top: 45%;
+      left: 35%;}
+  }
+  @media (orientation: landscape) and (max-width: 568px){
+    .texto-centro{
+      top: 58%;
+      left: 65%;}
+  }
+  @media (orientation: landscape) and (min-width: 569px) and (max-width: 768px){
+    .texto-centro{
+      top: 55%;
+      left: 62%;}
+  }
+  @media (orientation: landscape) and (min-width: 769px) and (max-width: 790px){
+    .texto-centro{
+      top: 60%;
+      left: 57%;}
+  }
+  @media (orientation: landscape) and (min-width: 791px) and (max-width: 950px){
+    .texto-centro{
+      top: 55%;
+      left: 57%;}
+  }
+  @media (orientation: landscape) and (min-width: 951px) and (max-width: 1200px){
+    .texto-centro{
+      top: 40%;
+      left: 50%;}
+  }
+
+
+
+
+.texto-centro h1{
+  color: #FBC02D;
+  text-shadow: 3px 4px #383838;
   font-weight: bold;
   font-size: 6rem;
   margin-bottom: 10px;
   /*z-index: 1;*/}
   @media (max-width: 320px){
-    .container .texto-centro h1{
+    .texto-centro h1{
       font-size: 2rem;
       margin-bottom: 10px;}
   }
   @media (min-width: 321px) and (max-width: 500px){
-    .container .texto-centro h1{
+    .texto-centro h1{
       font-size: 2.5rem;
       margin-bottom: 10px;}
   }
   @media (min-width: 501px) and (max-width: 1000px){
-    .container .texto-centro h1{
+    .texto-centro h1{
       font-size: 4.5rem;
       margin-bottom: 10px;}
   }
   @media (orientation: landscape) and (max-width: 568px){
-    .container .texto-centro h1{
+    .texto-centro h1{
       font-size: 2rem;
       margin-bottom: 10px;}
   }
   @media (orientation: landscape) and (min-width: 569px) and (max-width: 768px){
-    .container .texto-centro h1{
+    .texto-centro h1{
       font-size: 2.6rem;
       margin-bottom: 10px;}
   }
   @media (orientation: landscape) and (min-width: 769px) and (max-width: 950px){
-    .container .texto-centro h1{
+    .texto-centro h1{
       font-size: 3rem;
       margin-bottom: 10px;}
   }
   @media (orientation: landscape) and (min-width: 951px) and (max-width: 1200px){
-    .container .texto-centro h1{
+    .texto-centro h1{
       font-size: 5rem;
       margin-bottom: 10px;}
   }
 
 
 
-.container .texto-centro h2{
-  color: #8e44ad;
-  /*text-shadow: 3px 4px #383838;*/
+.texto-centro h2{
+  color: #fff;
+  text-shadow: 3px 4px #383838;
   font-weight: bold;
-  font-size: 5rem;
+  font-size: 4rem;
   margin-bottom: 10px;
   /*z-index: 1;*/}
   @media (max-width: 320px) {
-    .container  .texto-centro h2{
+    .texto-centro h2{
       font-size: 1.5rem;
       margin-bottom: 10px; }
   }
   @media (min-width: 321px) and (max-width: 500px){
-    .container  .texto-centro h2{
+    .texto-centro h2{
       font-size: 1.7rem;
       margin-bottom: 10px;}
   }
   @media (min-width: 501px) and (max-width: 1000px){
-    .container  .texto-centro h2{
+    .texto-centro h2{
       font-size: 3rem;
       margin-bottom: 10px;}
   }
   @media (orientation: landscape) and (max-width: 568px){
-    .container  .texto-centro h2{
+    .texto-centro h2{
       font-size: 1.5rem;
       margin-bottom: 10px;}
   }
   @media (orientation: landscape) and (min-width: 569px) and (max-width: 768px){
-    .container  .texto-centro h2{
+    .texto-centro h2{
       font-size: 1.5rem;
       margin-bottom: 10px;}
   }
   @media (orientation: landscape) and (min-width: 769px) and (max-width: 950px){
-    .container  .texto-centro h2{
+    .texto-centro h2{
       font-size: 2rem;
       margin-bottom: 10px;}
   }
   @media (orientation: landscape) and (min-width: 951px) and (max-width: 1200px){
-    .container  .texto-centro h2{
+    .texto-centro h2{
       font-size: 4rem;
       margin-bottom: 10px;}
   }
 
 
 
-.container .texto-centro h3{
-  color: #000;
-  /*text-shadow: 3px 4px #383838;*/
+
+.texto-centro h3{
+  color: #fff;
+  text-shadow: 3px 4px #383838;
   font-weight: bold;
-  font-size: 4rem;
-  text-align: right;
+  font-size: 4.5rem;
   margin-bottom: 10px;
   /*z-index: 1;*/}
   @media (max-width: 320px) {
-    .container .texto-centro h3{
+    .texto-centro h3{
       font-size: 1.5rem;
       margin-bottom: 10px; }
   }
   @media (min-width: 321px) and (max-width: 500px){
-    .container .texto-centro h3{
+    .texto-centro h3{
       font-size: 1.7rem;
       margin-bottom: 10px;}
   }
   @media (min-width: 501px) and (max-width: 1000px){
-    .container .texto-centro h3{
+    .texto-centro h3{
       font-size: 3.5rem;
       margin-bottom: 10px;}
   }
   @media (orientation: landscape) and (max-width: 568px){
-    .container .texto-centro h3{
+    .texto-centro h3{
       font-size: 1.3rem;
       margin-bottom: 10px;}
   }
   @media (orientation: landscape) and (min-width: 569px) and (max-width: 768px){
-    .container .texto-centro h3{
+    .texto-centro h3{
       font-size: 1.8rem;
       margin-bottom: 10px;}
   }
   @media (orientation: landscape) and (min-width: 769px) and (max-width: 790px){
-    .container .texto-centro h3{
+    .texto-centro h3{
       font-size: 2.3rem;
       margin-bottom: 10px;}
   }
   @media (orientation: landscape) and (min-width: 791px) and (max-width: 950px){
-    .container .texto-centro h3{
+    .texto-centro h3{
       font-size: 2.5rem;
       margin-bottom: 10px;}
   }
   @media (orientation: landscape) and (min-width: 951px) and (max-width: 1200px){
-    .container .texto-centro h3{
+    .texto-centro h3{
       font-size: 3.5rem;
       margin-bottom: 10px;}
   }
-
-
 
 
 
@@ -310,13 +347,66 @@ nav ul li.btn span.show:before{
   border-radius: 15px;
   cursor: pointer;
   margin: 12px 0;}
+  @media (max-width: 320px) {
+    .btn-fc{
+      width: 55%;
+      font-size: 0.6rem;
+      border-radius: 7px;}
+  }
+  @media (min-width: 321px) and (max-width: 500px){
+    .btn-fc{
+      width: 60%;
+      font-size: 0.8rem;
+      border-radius: 7px;}
+  }
+  @media (orientation: landscape) and (max-width: 568px){
+    .btn-fc{
+      width: 60%;
+      font-size: 0.6rem;
+      border-radius: 7px;}
+  }
+  @media (orientation: landscape) and (min-width: 569px) and (max-width: 768px){
+    .btn-fc{
+      width: 70%;
+      font-size: 0.8rem;
+      border-radius: 7px;}
+  }
+  @media (orientation: landscape) and (min-width: 769px) and (max-width: 950px){
+    .btn-fc{
+      width: 70%;
+      font-size: 0.8rem;
+      border-radius: 7px;}
+  }
 
 
 .btn-fc:hover{
   background-color: #fff;
   border: 4px solid #fff;
   color: #000;}
-
+  @media (max-width: 320px) {
+    .btn-fc:hover{
+      font-size: 0.8rem;}
+  }
+  @media (min-width: 321px) and (max-width: 500px){
+    .btn-fc{
+      width: 60%;
+      font-size: 0.8rem;
+      border-radius: 7px;}
+  }
+  @media (orientation: landscape) and (max-width: 568px){
+    .btn-fc:hover{
+      font-size: 0.8rem;}
+  }
+  @media (orientation: landscape) and (min-width: 569px) and (max-width: 768px){
+    .btn-fc:hover{
+      font-size: 0.8rem;}
+  }
+  @media (orientation: landscape) and (min-width: 769px) and (max-width: 950px){
+    .btn-fc{
+      width: 70%;
+      font-size: 0.8rem;
+      border-radius: 7px;}
+  }
 
 
 
@@ -426,7 +516,7 @@ nav ul li.btn span.show:before{
   font-weight: bold !important;
 }
 
-.text-{
+.text-roxo{
   color: #8e44ad !important;
   font-weight: bold !important;
 }
@@ -444,46 +534,4 @@ nav ul li.btn span.show:before{
 
 .format-evento{
   font-size: 1.2rem !important;
-}
-
-
-.acerto-col-md-12{
-  padding-left: 0px !important;
-  padding-right: 0px !important;
-}
-
-.acerto-container-fluid{
-  padding-left: 0px !important;
-  padding-right: 0px !important;
-  padding-top: 50px !important;
-  padding-bottom: 10px !important;
-}
-
-
-.arrow-up{
-  position: fixed;
-  bottom: 30px;
-  left: 13px;
-  font-size: 35px;
-  background: #000;
-  color: white;
-  padding: 7px 10px;
-  border-radius: 10%;
-  cursor: pointer;
-  opacity: 0;
-  pointer-events: none;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
-  z-index: 9999999999; /*Força o widget ficar acima de qualquer elemento*/
-  transition: opacity .3s ease-in-out;
-}
-
-.arrow-up:hover{
-  background: #0d4aa5;
-  transition: .5s;
-}
-
-.py-5-mod{
-  height: 50% !important;
-  width: 100% !important;
-  opacity: 0.8 !important;
 }

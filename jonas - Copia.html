@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="assets/css/style2.css">
     <link rel="stylesheet" href="assets/css/cssman.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
-  <link rel="stylesheet" href="assets/css/whatss.css">
+    <link rel="stylesheet" href="assets/css/whatss.css">
     <!-- FonstAwesome W3Schools -->
     <script src="assets/js/a076d05399.js"></script>
     <!-- <link rel="stylesheet" href="assets/css/font-awesome.min.css"> -->
@@ -67,7 +67,7 @@
           <div class="col-md-12 acerto-col-md-12">
             <div class="carousel slide d-flex" data-ride="carousel" id="carousel">
               <div class="carousel-inner">
-                <div class="carousel-item active"> <img class="d-block img-fluid w-100 d-flex" src="public/imagens/empresa/salao.png"></div>
+                <div class="carousel-item active"> <img class="d-block img-fluid w-100 d-flex" src="public/imagens/empresa/frente_salao.png"></div>
               </div>
             </div>
           </div>
@@ -286,5 +286,36 @@
         $('nav ul li.btn span').toggleClass("show");
       });
     </script>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+      }
+    </script>
+
+
   </body>
 </html>
